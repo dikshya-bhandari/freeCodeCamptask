@@ -1,0 +1,33 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+nav{
+    background-color: aqua;
+
+}
+
+nav .container ul{
+list-style-type: none;
+margin-left:1000px;
+}
+nav .container ul li{
+    display: inline;
+    padding-right:1.7rem;
+    font-weight:bold;
+    
+}
+nav .container{
+    display: inline;
+}
+
+main .body{
+    text-align:center;
+    margin-top:250px;
+}
+main .body h2{
+    border:2px solid black;
+    width:300px;
+    margin-left:520px;
+}
