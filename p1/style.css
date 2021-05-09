@@ -3,10 +3,10 @@ body{
     padding:0;
 }
 
-nav{
+/* nav{
     background-color: aqua;
 
-}
+} */
 
 nav .container ul{
 list-style-type: none;
@@ -28,6 +28,15 @@ main .body{
 }
 main .body h2{
     border:2px solid black;
-    width:300px;
+    width:500px;
     margin-left:520px;
+    border-radius: 5px;
+    background-color: black;
+    color:white;
+}
+main .body button{
+    width:120px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left:150px;
+    height:30px;
 }

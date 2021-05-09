@@ -14,8 +14,12 @@ const color  = document.getElementById("update");
 function changeMe(){
     let hexColor  = "#";
     for(let i = 0; i<6; i++){
-        hexColor += hex[0];
+        hexColor += hex[getRandomNumber()];
     }
     color.textContent = hexColor;
     document.body.style.backgroundColor=hexColor;
+}
+
+function getRandomNumber(){
+    return Math.floor(Math.random()*hex.length)
 }
