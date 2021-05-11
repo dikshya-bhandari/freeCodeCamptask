@@ -1,0 +1,19 @@
+body{
+    background-color: aquamarine;
+}
+
+main section{
+    text-align: center;
+    background-color: gray;
+    height: 600px;
+    width:430px;
+    margin-left:430px;
+    border-radius: 5px;
+
+}
+
+main section article .img-container img{
+    border-radius: 180px;
+    height:200px;
+    width:200px;
+}
