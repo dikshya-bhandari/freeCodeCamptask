@@ -9,7 +9,7 @@ const reviews =[
 
     {
         id:2,
-        name:"dikshya bhandari",
+        name:"Dikshya Bhandari",
         job:"web developer",
         img: "./image/b.jpg",
         text:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis soluta magni ipsum mollitia optio odio tempora sit voluptatum nisi sapiente atque, laboriosam unde culpa adipisci facilis provident illum, modi incidunt!",
@@ -17,7 +17,7 @@ const reviews =[
 
     {
         id:3,
-        name:"dikshya bhandari",
+        name:"Sapana Shahi",
         job:"web developer",
         img: "./image/c.jpg",
         text:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis soluta magni ipsum mollitia optio odio tempora sit voluptatum nisi sapiente atque, laboriosam unde culpa adipisci facilis provident illum, modi incidunt!",
@@ -25,7 +25,7 @@ const reviews =[
 
     {
         id:4,
-        name:"dikshya bhandari",
+        name:"Aava Bhandari",
         job:"web developer",
         img: "./image/d.jpg",
         text:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis soluta magni ipsum mollitia optio odio tempora sit voluptatum nisi sapiente atque, laboriosam unde culpa adipisci facilis provident illum, modi incidunt!",
@@ -33,7 +33,7 @@ const reviews =[
 
     {
         id:5,
-        name:"dikshya bhandari",
+        name:"Bindu Darlami",
         job:"web developer",
         img: "./image/e.jpg",
         text:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis soluta magni ipsum mollitia optio odio tempora sit voluptatum nisi sapiente atque, laboriosam unde culpa adipisci facilis provident illum, modi incidunt!",
@@ -53,14 +53,23 @@ const randomBtn  = document.getElementById(".random-btn");
 let currentItem = 0;
 
 //load initial item
-// window.addEventListener("DOMContentLoaded" , function(){
-//     console.log("shake and bake");
-// });
+window.addEventListener("DOMContentLoaded" , function(){
+    showPerson(currentItem);
+});
 
-if( document.readyState !== 'loading' ) {
-    console.log( 'shake and bake' );
-} else {
-    document.addEventListener('DOMContentLoaded', function () {
-        console.log('shake and bake' );
-    });
+//SHOW PERSON BASED ON ITEM
+
+function showPerson(person){
+    const item =reviews[person];
+    img.src=item.img;
+    author.textContent=item.name;
+    job.textContent=item.job;
+    info.textContent=item.text;
 }
+
+//show next person
+nextBtn.addEventListener("click" , function () {
+    currentItem++;
+    showPerson(currentItem);
+})
+
